@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url(cap.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 550px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: rgb(255, 241, 220);
+    top: 0;
+    width: 100%;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navigation li:last-child:after {
+    content: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.navigation a,
+.navigation a:visited {
+    color: #ff6661;
+}
+
+.navigation a.current,
+.navigation a:hover {
+    color: #ff1919;
+}
+
+.hr-sloping-lines {
+    padding: 0;
+    height: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-position: 50%;
+    color: #ff1919;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3px" height="3px" viewBox="0 0 3 3" fill="orange"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+    background-size: 6px 6px;
+}
+
+.title {
+    background-image: url(кухня.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    height: 500px;
+    color: #ff1919;
+    display: flex;
+}
+
+h1 {
+    color: #ff1919;
+}
+
+.block {
+    background: rgb(255, 241, 220);
+    list-style: none;
+    padding: 25px 0 5px;
+    text-align: center;
+    top: 0;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+.block h1 {
+    text-transform: uppercase;
+}
+
+.block p {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ff6661;
+}
+
+.block button {
+    background-color: rgb(255, 241, 220);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px;
+    border: 1.5px solid #161616;
+}
+
+.block button a {
+    text-decoration: none;
+    color: #161616;
+}
+
+aside {
+    background-image: url(menu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.table thead th {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #444441;
+    border-top: 2px solid #716561;
+    border-bottom: 2px solid #716561;
+}
+
+.table tbody td {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444441;
+    border-top: 1px solid #716561;
+}
+
+#textbox {
+    width: 70vw;
+    height: 30vh;
+}
+
+.discount {
+    background-color: rgb(255, 241, 220);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px;
+    border: 1.5px solid #161616;
+}
+
+#myInput {
+    background-color: #ff6661;
+    border-left: 6px solid #870f43;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+iframe {
+    display: block;
+    width: calc(100% / 1.5);
+    height: 500px;
+    margin: 0 auto;
+    background-color: #8e9ff7;
+}
+
+.place {
+    background-image: url(PPPP.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
+.place h2 {
+    color: #fff;
+}
+
+#footer {
+    width: auto;
+    margin: auto;
+    padding: 10px 20px;
+    height: 145px;
+    background-color: rgb(255, 241, 220);
+}
+
+footer h3 {
+    font-family: 'Bentham', serif;
+    font-size: 16px;
+    color: #ff6661;
+    border-bottom: 1px solid #ff1919;
+    margin: 0 0 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'Arsenal', sans-serif;
+}
+
+footer a {
+    color: #161616;
+}
+
+#sitemap {
+    width: 150px;
+    float: left;
+    margin-left: 100px;
+    padding-right: 50px;
+}
+
+#sitemap div {
+    display: inline-block;
+}
+
+#sitemap div+div {
+    margin-left: 100px;
+}
+
+#sitemap a {
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Bentham', serif;
+}
+
+#sitemap a:hover {
+    text-decoration: underline;
+}
+
+#social {
+    float: left;
+    margin-left: 150px;
+    width: 160px;
+    padding: unset;
+}
+
+.lil {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Bentham', serif;
+}
+
+#footer-logo {
+    float: right;
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: right;
+}
